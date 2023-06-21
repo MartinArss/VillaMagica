@@ -7,6 +7,7 @@ namespace MagicVilla_API.Datos
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<Villa> Villas { get; set; }
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
         // Metodo para alimentar tabla
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
